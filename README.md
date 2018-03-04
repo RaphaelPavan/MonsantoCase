@@ -6,13 +6,13 @@ For Mr. Bruno T. Nascimento:
     Thank you and that's it:
 
 Resolution of an Internship case.
- *   What is the O() complexity of your solution?
+ *   What is the O() complexity of your solution? -->
     The O() complexity is O(v*p) being v the size of the virus' DNA string and p the person's one.
     
- *   How can you improve your existing solution? If that is possible, what would your new solution's O() complexity be?
+ *   How can you improve your existing solution? If that is possible, what would your new solution's O() complexity be? -->
     It's possible to improve my solution by division and conquer, maybe. If I had time to program a full binary-tree program maybe I could get the complexity to O(p*log(p)) or something.
     
- *   What is the complexity class  (P, NP, NP-complete, etc) of this problem ?
+ *   What is the complexity class  (P, NP, NP-complete, etc) of this problem ? -->
     I believe the problem is a P complex problem because it is really simple and there are ways to solve it with less than n² complexity.
     
     
