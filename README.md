@@ -9,7 +9,8 @@ For Mr. Bruno T. Nascimento:
 
 Resolution of an Internship case.
  *   What is the O() complexity of your solution? -->
-    The O() complexity is O(v*p) being v the size of the virus' DNA string and p the person's one.
+    The O() complexity is O(v*p) being v the size of the virus' DNA string and p the person's one.   
+    Explanation: As I have a loop while inside the for loop, the maximum times the internal loop is going to be run is equal to the v String lenght. As it is run P string lenght times, the complexity is around p*v. Although I used strlen to calculate the size of the strings, it is worst case is linear in p or v (for each case) and it sums up with the rest of the loops (p+v+p*v). But as we know, the O() complexity is taken based on the equation which multiplied by some constant is higher than the one we got from the algorithm starting from some n0. That means, the algorithm has a complexity full of other stuff but goes below p*v*constant therefore, O(p*v) is a suitable answer.
     
  *   How can you improve your existing solution? If that is possible, what would your new solution's O() complexity be? -->
     It's possible to improve my solution by division and conquer, maybe. If I had time to program a full binary-tree program maybe I could get the complexity to O(p*log(p)) or something.
