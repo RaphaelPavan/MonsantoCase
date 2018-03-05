@@ -3,12 +3,13 @@
 #include <stdlib.h>
 
 void virusIndices(char* p, char* v) {
-    // Print the answer for this test case in a single line
+    //Function compares DNA strings and finds sub-patterns.
     int i = 0, j = 0, k = 0, flag = 0;
     int maxError;
     int pSize = strlen(p), vSize = strlen(v);
     for (i = 0; p[i] != '\0'; i++) {
-        if ((pSize-i) < vSize) {
+        if ((pSize-i) < vSize) { 
+            //Condition to not make useless comparisons
             break;
         }
         j = 0;
@@ -24,9 +25,11 @@ void virusIndices(char* p, char* v) {
         if (v[j] == '\0' && maxError <= 1) {
             flag = 1;
             printf ("%d ", i);
+            //Prints the index each time a Match is found 
         }
     }
     if (flag == 0) {
+        //Prints only if no Match was found
         printf ("No Match!");
     }
     printf ("\n");
